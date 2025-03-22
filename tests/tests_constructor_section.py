@@ -1,12 +1,5 @@
 from locators import Locators
-
-
-def verify_tab_state(driver, locator, expected_active):
-    class_attribute = driver.find_element(*locator).get_attribute("class")
-    if expected_active:
-        assert "tab_tab_type_current__2BEPc" in class_attribute
-    else:
-        assert "tab_tab_type_current__2BEPc" not in class_attribute
+from helper import verify_tab_state
 
 
 class TestsNavigationSection:
