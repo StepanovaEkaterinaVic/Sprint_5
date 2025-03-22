@@ -4,7 +4,6 @@ from locators import Locators
 import helper as hp
 
 
-
 class TestRegistrationWithNewInputData:
 
     def test_success_registration(self, driver):
@@ -30,4 +29,3 @@ class TestCheckingCreationExistingAccount:
         driver.find_element(*Locators.REG_POPUP).click()
         error_message = driver.find_element(*Locators.ERROR_MESSAGE).text
         assert "Некорректный пароль" in error_message
-        
