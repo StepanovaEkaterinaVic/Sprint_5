@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from data import Credentials
 from locators import Locators
-from tests.curl import main_site
+from curl import main_site
 
 
 class TestTransferFromPersonalAccount:
